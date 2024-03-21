@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD1431072BA9836A00549600 /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = DD1431062BA9836A00549600 /* AppsFlyerLib */; };
+		DD14310A2BA9837C00549600 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = DD1431092BA9837C00549600 /* OneSignalExtension */; };
+		DD14310C2BA9837C00549600 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = DD14310B2BA9837C00549600 /* OneSignalFramework */; };
+		DD14310E2BA9837C00549600 /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = DD14310D2BA9837C00549600 /* OneSignalInAppMessages */; };
+		DD1431102BA9837C00549600 /* OneSignalLocation in Frameworks */ = {isa = PBXBuildFile; productRef = DD14310F2BA9837C00549600 /* OneSignalLocation */; };
+		DD1431132BA983B900549600 /* AppsFlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1431122BA983B900549600 /* AppsFlayer.swift */; };
+		DD1431152BA9848B00549600 /* DesertConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1431142BA9848B00549600 /* DesertConstant.swift */; };
+		DD1431172BA987CC00549600 /* OnesignalPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1431162BA987CC00549600 /* OnesignalPush.swift */; };
+		DD1431192BA9956100549600 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1431182BA9956100549600 /* LaunchViewController.swift */; };
+		DD14311B2BA995CA00549600 /* AppTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD14311A2BA995CA00549600 /* AppTracking.swift */; };
+		DD14311D2BA9AAA900549600 /* LaunchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD14311C2BA9AAA900549600 /* LaunchService.swift */; };
+		DD14313C2BA9FE1C00549600 /* DushCoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD14313B2BA9FE1C00549600 /* DushCoinViewController.swift */; };
+		DD14313E2BAA000400549600 /* HowManyCoins.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD14313D2BAA000400549600 /* HowManyCoins.swift */; };
+		DD14314C2BAA36AA00549600 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD14314B2BAA36AA00549600 /* NotificationService.swift */; };
+		DD1431502BAA36AA00549600 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DD1431492BAA36AA00549600 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DD1431572BAA397A00549600 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DD1431562BAA397A00549600 /* SnapKit */; };
+		DD14315A2BAA39AE00549600 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DD1431592BAA39AE00549600 /* Alamofire */; };
+		F193BC312BA0361600A4C0B5 /* DesertModeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F193BC302BA0361600A4C0B5 /* DesertModeController.swift */; };
+		F193BC332BA040F100A4C0B5 /* DesertResultFriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F193BC322BA040F100A4C0B5 /* DesertResultFriendsController.swift */; };
+		F1DF64C22B99CE95002975A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DF64C12B99CE95002975A9 /* AppDelegate.swift */; };
+		F1DF64C42B99CE95002975A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DF64C32B99CE95002975A9 /* SceneDelegate.swift */; };
+		F1DF64C62B99CE95002975A9 /* Desert1Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DF64C52B99CE95002975A9 /* Desert1Controller.swift */; };
+		F1DF64CB2B99CE96002975A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1DF64CA2B99CE96002975A9 /* Assets.xcassets */; };
+		F1DF64CE2B99CE96002975A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1DF64CC2B99CE96002975A9 /* LaunchScreen.storyboard */; };
+		F1DF64D92B99D054002975A9 /* Desert2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DF64D82B99D054002975A9 /* Desert2Controller.swift */; };
+		F1DF64DB2B99D0C0002975A9 /* DesertMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DF64DA2B99D0C0002975A9 /* DesertMenuController.swift */; };
+		F1DF64DD2B99D388002975A9 /* DesertShopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DF64DC2B99D388002975A9 /* DesertShopController.swift */; };
+		F1DF64E22B99D545002975A9 /* DesertHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DF64E02B99D545002975A9 /* DesertHistoryCell.swift */; };
+		F1DF64E32B99D545002975A9 /* DesertHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DF64E12B99D545002975A9 /* DesertHistoryController.swift */; };
+		F1DF64E52B99D573002975A9 /* DesertDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DF64E42B99D573002975A9 /* DesertDetailController.swift */; };
+		F1DF64E72B99D9BA002975A9 /* DesertSettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DF64E62B99D9BA002975A9 /* DesertSettingsController.swift */; };
+		F1DF64EE2B99E0E8002975A9 /* DesertGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DF64EA2B99E0E7002975A9 /* DesertGameController.swift */; };
+		F1DF64EF2B99E0E8002975A9 /* Desert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DF64EB2B99E0E8002975A9 /* Desert.swift */; };
+		F1DF64F02B99E0E8002975A9 /* DesertStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DF64EC2B99E0E8002975A9 /* DesertStructure.swift */; };
+		F1DF64F12B99E0E8002975A9 /* DesertGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DF64ED2B99E0E8002975A9 /* DesertGameCell.swift */; };
+		F1DF64F32B99E13C002975A9 /* Copyduck.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1DF64F22B99E13C002975A9 /* Copyduck.ttf */; };
+		F1DF64FB2B99E2A2002975A9 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1DF64F42B99E2A1002975A9 /* Poppins-Medium.ttf */; };
+		F1DF64FC2B99E2A2002975A9 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1DF64F52B99E2A1002975A9 /* Poppins-Light.ttf */; };
+		F1DF64FD2B99E2A2002975A9 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1DF64F62B99E2A1002975A9 /* Poppins-Thin.ttf */; };
+		F1DF64FE2B99E2A2002975A9 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1DF64F72B99E2A1002975A9 /* Poppins-Black.ttf */; };
+		F1DF64FF2B99E2A2002975A9 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1DF64F82B99E2A2002975A9 /* Poppins-Bold.ttf */; };
+		F1DF65002B99E2A2002975A9 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1DF64F92B99E2A2002975A9 /* Poppins-Regular.ttf */; };
+		F1DF65012B99E2A2002975A9 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1DF64FA2B99E2A2002975A9 /* Poppins-SemiBold.ttf */; };
+		F1DF65032B99E769002975A9 /* DesertResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DF65022B99E769002975A9 /* DesertResultController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD14314E2BAA36AA00549600 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1DF64B62B99CE95002975A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD1431482BAA36AA00549600;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DD1431542BAA36AA00549600 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DD1431502BAA36AA00549600 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DD1431122BA983B900549600 /* AppsFlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsFlayer.swift; sourceTree = "<group>"; };
+		DD1431142BA9848B00549600 /* DesertConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesertConstant.swift; sourceTree = "<group>"; };
+		DD1431162BA987CC00549600 /* OnesignalPush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnesignalPush.swift; sourceTree = "<group>"; };
+		DD1431182BA9956100549600 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		DD14311A2BA995CA00549600 /* AppTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppTracking.swift; sourceTree = "<group>"; };
+		DD14311C2BA9AAA900549600 /* LaunchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchService.swift; sourceTree = "<group>"; };
+		DD14313B2BA9FE1C00549600 /* DushCoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DushCoinViewController.swift; sourceTree = "<group>"; };
+		DD14313D2BAA000400549600 /* HowManyCoins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowManyCoins.swift; sourceTree = "<group>"; };
+		DD1431442BAA349200549600 /* Desert Dush.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Desert Dush.entitlements"; sourceTree = "<group>"; };
+		DD1431492BAA36AA00549600 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD14314B2BAA36AA00549600 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		DD14314D2BAA36AA00549600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F193BC302BA0361600A4C0B5 /* DesertModeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesertModeController.swift; sourceTree = "<group>"; };
+		F193BC322BA040F100A4C0B5 /* DesertResultFriendsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesertResultFriendsController.swift; sourceTree = "<group>"; };
+		F1DF64BE2B99CE95002975A9 /* Desert Dush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desert Dush.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1DF64C12B99CE95002975A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1DF64C32B99CE95002975A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F1DF64C52B99CE95002975A9 /* Desert1Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desert1Controller.swift; sourceTree = "<group>"; };
+		F1DF64CA2B99CE96002975A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1DF64CD2B99CE96002975A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1DF64CF2B99CE96002975A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1DF64D82B99D054002975A9 /* Desert2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desert2Controller.swift; sourceTree = "<group>"; };
+		F1DF64DA2B99D0C0002975A9 /* DesertMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesertMenuController.swift; sourceTree = "<group>"; };
+		F1DF64DC2B99D388002975A9 /* DesertShopController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesertShopController.swift; sourceTree = "<group>"; };
+		F1DF64E02B99D545002975A9 /* DesertHistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesertHistoryCell.swift; sourceTree = "<group>"; };
+		F1DF64E12B99D545002975A9 /* DesertHistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesertHistoryController.swift; sourceTree = "<group>"; };
+		F1DF64E42B99D573002975A9 /* DesertDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesertDetailController.swift; sourceTree = "<group>"; };
+		F1DF64E62B99D9BA002975A9 /* DesertSettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesertSettingsController.swift; sourceTree = "<group>"; };
+		F1DF64EA2B99E0E7002975A9 /* DesertGameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesertGameController.swift; sourceTree = "<group>"; };
+		F1DF64EB2B99E0E8002975A9 /* Desert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Desert.swift; sourceTree = "<group>"; };
+		F1DF64EC2B99E0E8002975A9 /* DesertStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesertStructure.swift; sourceTree = "<group>"; };
+		F1DF64ED2B99E0E8002975A9 /* DesertGameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesertGameCell.swift; sourceTree = "<group>"; };
+		F1DF64F22B99E13C002975A9 /* Copyduck.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Copyduck.ttf; sourceTree = "<group>"; };
+		F1DF64F42B99E2A1002975A9 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		F1DF64F52B99E2A1002975A9 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		F1DF64F62B99E2A1002975A9 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		F1DF64F72B99E2A1002975A9 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		F1DF64F82B99E2A2002975A9 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		F1DF64F92B99E2A2002975A9 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		F1DF64FA2B99E2A2002975A9 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		F1DF65022B99E769002975A9 /* DesertResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesertResultController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD1431462BAA36AA00549600 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1DF64BB2B99CE95002975A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD14310E2BA9837C00549600 /* OneSignalInAppMessages in Frameworks */,
+				DD14315A2BAA39AE00549600 /* Alamofire in Frameworks */,
+				DD1431572BAA397A00549600 /* SnapKit in Frameworks */,
+				DD14310C2BA9837C00549600 /* OneSignalFramework in Frameworks */,
+				DD14310A2BA9837C00549600 /* OneSignalExtension in Frameworks */,
+				DD1431102BA9837C00549600 /* OneSignalLocation in Frameworks */,
+				DD1431072BA9836A00549600 /* AppsFlyerLib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD1431112BA9838600549600 /* Poncho */ = {
+			isa = PBXGroup;
+			children = (
+				DD1431122BA983B900549600 /* AppsFlayer.swift */,
+				DD14313B2BA9FE1C00549600 /* DushCoinViewController.swift */,
+				DD14313D2BAA000400549600 /* HowManyCoins.swift */,
+				DD14311C2BA9AAA900549600 /* LaunchService.swift */,
+				DD14311A2BA995CA00549600 /* AppTracking.swift */,
+				DD1431142BA9848B00549600 /* DesertConstant.swift */,
+				DD1431162BA987CC00549600 /* OnesignalPush.swift */,
+				DD1431182BA9956100549600 /* LaunchViewController.swift */,
+			);
+			path = Poncho;
+			sourceTree = "<group>";
+		};
+		DD14314A2BAA36AA00549600 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				DD14314B2BAA36AA00549600 /* NotificationService.swift */,
+				DD14314D2BAA36AA00549600 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		F1DF64B52B99CE95002975A9 = {
+			isa = PBXGroup;
+			children = (
+				F1DF64C02B99CE95002975A9 /* Desert Dush */,
+				DD14314A2BAA36AA00549600 /* OneSignalNotificationServiceExtension */,
+				F1DF64BF2B99CE95002975A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1DF64BF2B99CE95002975A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1DF64BE2B99CE95002975A9 /* Desert Dush.app */,
+				DD1431492BAA36AA00549600 /* OneSignalNotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1DF64C02B99CE95002975A9 /* Desert Dush */ = {
+			isa = PBXGroup;
+			children = (
+				DD1431442BAA349200549600 /* Desert Dush.entitlements */,
+				DD1431112BA9838600549600 /* Poncho */,
+				F1DF64C12B99CE95002975A9 /* AppDelegate.swift */,
+				F1DF64C32B99CE95002975A9 /* SceneDelegate.swift */,
+				F1DF64C52B99CE95002975A9 /* Desert1Controller.swift */,
+				F1DF64D82B99D054002975A9 /* Desert2Controller.swift */,
+				F1DF64DA2B99D0C0002975A9 /* DesertMenuController.swift */,
+				F1DF64DC2B99D388002975A9 /* DesertShopController.swift */,
+				F1DF64E12B99D545002975A9 /* DesertHistoryController.swift */,
+				F1DF64E02B99D545002975A9 /* DesertHistoryCell.swift */,
+				F1DF64E42B99D573002975A9 /* DesertDetailController.swift */,
+				F1DF64E62B99D9BA002975A9 /* DesertSettingsController.swift */,
+				F193BC302BA0361600A4C0B5 /* DesertModeController.swift */,
+				F1DF64EA2B99E0E7002975A9 /* DesertGameController.swift */,
+				F1DF64ED2B99E0E8002975A9 /* DesertGameCell.swift */,
+				F1DF64EC2B99E0E8002975A9 /* DesertStructure.swift */,
+				F1DF64EB2B99E0E8002975A9 /* Desert.swift */,
+				F1DF65022B99E769002975A9 /* DesertResultController.swift */,
+				F193BC322BA040F100A4C0B5 /* DesertResultFriendsController.swift */,
+				F1DF64CA2B99CE96002975A9 /* Assets.xcassets */,
+				F1DF64CC2B99CE96002975A9 /* LaunchScreen.storyboard */,
+				F1DF64CF2B99CE96002975A9 /* Info.plist */,
+				F1DF64F22B99E13C002975A9 /* Copyduck.ttf */,
+				F1DF64F72B99E2A1002975A9 /* Poppins-Black.ttf */,
+				F1DF64F82B99E2A2002975A9 /* Poppins-Bold.ttf */,
+				F1DF64F52B99E2A1002975A9 /* Poppins-Light.ttf */,
+				F1DF64F42B99E2A1002975A9 /* Poppins-Medium.ttf */,
+				F1DF64F92B99E2A2002975A9 /* Poppins-Regular.ttf */,
+				F1DF64FA2B99E2A2002975A9 /* Poppins-SemiBold.ttf */,
+				F1DF64F62B99E2A1002975A9 /* Poppins-Thin.ttf */,
+			);
+			path = "Desert Dush";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD1431482BAA36AA00549600 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD1431512BAA36AA00549600 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				DD1431452BAA36AA00549600 /* Sources */,
+				DD1431462BAA36AA00549600 /* Frameworks */,
+				DD1431472BAA36AA00549600 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = DD1431492BAA36AA00549600 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F1DF64BD2B99CE95002975A9 /* Desert Dush */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1DF64D22B99CE96002975A9 /* Build configuration list for PBXNativeTarget "Desert Dush" */;
+			buildPhases = (
+				F1DF64BA2B99CE95002975A9 /* Sources */,
+				F1DF64BB2B99CE95002975A9 /* Frameworks */,
+				F1DF64BC2B99CE95002975A9 /* Resources */,
+				DD1431542BAA36AA00549600 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD14314F2BAA36AA00549600 /* PBXTargetDependency */,
+			);
+			name = "Desert Dush";
+			packageProductDependencies = (
+				DD1431062BA9836A00549600 /* AppsFlyerLib */,
+				DD1431092BA9837C00549600 /* OneSignalExtension */,
+				DD14310B2BA9837C00549600 /* OneSignalFramework */,
+				DD14310D2BA9837C00549600 /* OneSignalInAppMessages */,
+				DD14310F2BA9837C00549600 /* OneSignalLocation */,
+				DD1431562BAA397A00549600 /* SnapKit */,
+				DD1431592BAA39AE00549600 /* Alamofire */,
+			);
+			productName = "Desert Dush";
+			productReference = F1DF64BE2B99CE95002975A9 /* Desert Dush.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1DF64B62B99CE95002975A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					DD1431482BAA36AA00549600 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					F1DF64BD2B99CE95002975A9 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = F1DF64B92B99CE95002975A9 /* Build configuration list for PBXProject "Desert Dush" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1DF64B52B99CE95002975A9;
+			packageReferences = (
+				DD1431052BA9836A00549600 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+				DD1431082BA9837C00549600 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
+				DD1431552BAA397A00549600 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				DD1431582BAA39AE00549600 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = F1DF64BF2B99CE95002975A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1DF64BD2B99CE95002975A9 /* Desert Dush */,
+				DD1431482BAA36AA00549600 /* OneSignalNotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD1431472BAA36AA00549600 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1DF64BC2B99CE95002975A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1DF64CE2B99CE96002975A9 /* LaunchScreen.storyboard in Resources */,
+				F1DF64FC2B99E2A2002975A9 /* Poppins-Light.ttf in Resources */,
+				F1DF64FB2B99E2A2002975A9 /* Poppins-Medium.ttf in Resources */,
+				F1DF65002B99E2A2002975A9 /* Poppins-Regular.ttf in Resources */,
+				F1DF64FF2B99E2A2002975A9 /* Poppins-Bold.ttf in Resources */,
+				F1DF65012B99E2A2002975A9 /* Poppins-SemiBold.ttf in Resources */,
+				F1DF64FE2B99E2A2002975A9 /* Poppins-Black.ttf in Resources */,
+				F1DF64FD2B99E2A2002975A9 /* Poppins-Thin.ttf in Resources */,
+				F1DF64CB2B99CE96002975A9 /* Assets.xcassets in Resources */,
+				F1DF64F32B99E13C002975A9 /* Copyduck.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD1431452BAA36AA00549600 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD14314C2BAA36AA00549600 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1DF64BA2B99CE95002975A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1DF64F12B99E0E8002975A9 /* DesertGameCell.swift in Sources */,
+				F1DF65032B99E769002975A9 /* DesertResultController.swift in Sources */,
+				DD14311D2BA9AAA900549600 /* LaunchService.swift in Sources */,
+				F1DF64EF2B99E0E8002975A9 /* Desert.swift in Sources */,
+				DD1431172BA987CC00549600 /* OnesignalPush.swift in Sources */,
+				F1DF64E22B99D545002975A9 /* DesertHistoryCell.swift in Sources */,
+				DD14311B2BA995CA00549600 /* AppTracking.swift in Sources */,
+				F1DF64DD2B99D388002975A9 /* DesertShopController.swift in Sources */,
+				F1DF64EE2B99E0E8002975A9 /* DesertGameController.swift in Sources */,
+				F1DF64E32B99D545002975A9 /* DesertHistoryController.swift in Sources */,
+				F1DF64E72B99D9BA002975A9 /* DesertSettingsController.swift in Sources */,
+				F193BC332BA040F100A4C0B5 /* DesertResultFriendsController.swift in Sources */,
+				DD1431132BA983B900549600 /* AppsFlayer.swift in Sources */,
+				DD14313E2BAA000400549600 /* HowManyCoins.swift in Sources */,
+				F1DF64C62B99CE95002975A9 /* Desert1Controller.swift in Sources */,
+				DD1431152BA9848B00549600 /* DesertConstant.swift in Sources */,
+				DD14313C2BA9FE1C00549600 /* DushCoinViewController.swift in Sources */,
+				F1DF64F02B99E0E8002975A9 /* DesertStructure.swift in Sources */,
+				F193BC312BA0361600A4C0B5 /* DesertModeController.swift in Sources */,
+				F1DF64DB2B99D0C0002975A9 /* DesertMenuController.swift in Sources */,
+				F1DF64C22B99CE95002975A9 /* AppDelegate.swift in Sources */,
+				F1DF64C42B99CE95002975A9 /* SceneDelegate.swift in Sources */,
+				DD1431192BA9956100549600 /* LaunchViewController.swift in Sources */,
+				F1DF64D92B99D054002975A9 /* Desert2Controller.swift in Sources */,
+				F1DF64E52B99D573002975A9 /* DesertDetailController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD14314F2BAA36AA00549600 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD1431482BAA36AA00549600 /* OneSignalNotificationServiceExtension */;
+			targetProxy = DD14314E2BAA36AA00549600 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F1DF64CC2B99CE96002975A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1DF64CD2B99CE96002975A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD1431522BAA36AA00549600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UYNAXXGZDC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.desert.dush.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DD1431532BAA36AA00549600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UYNAXXGZDC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.desert.dush.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F1DF64D02B99CE96002975A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1DF64D12B99CE96002975A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1DF64D32B99CE96002975A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Desert Dush/Desert Dush.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UYNAXXGZDC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Desert Dush/Info.plist";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We need access to your IDFA to optimize advertising and show you fewer ads.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.desert.dush;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F1DF64D42B99CE96002975A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Desert Dush/Desert Dush.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UYNAXXGZDC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Desert Dush/Info.plist";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We need access to your IDFA to optimize advertising and show you fewer ads.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.desert.dush;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD1431512BAA36AA00549600 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD1431522BAA36AA00549600 /* Debug */,
+				DD1431532BAA36AA00549600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1DF64B92B99CE95002975A9 /* Build configuration list for PBXProject "Desert Dush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1DF64D02B99CE96002975A9 /* Debug */,
+				F1DF64D12B99CE96002975A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1DF64D22B99CE96002975A9 /* Build configuration list for PBXNativeTarget "Desert Dush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1DF64D32B99CE96002975A9 /* Debug */,
+				F1DF64D42B99CE96002975A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DD1431052BA9836A00549600 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.13.1;
+			};
+		};
+		DD1431082BA9837C00549600 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-XCFramework";
+			requirement = {
+				kind = exactVersion;
+				version = 5.1.3;
+			};
+		};
+		DD1431552BAA397A00549600 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = exactVersion;
+				version = 5.7.1;
+			};
+		};
+		DD1431582BAA39AE00549600 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DD1431062BA9836A00549600 /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD1431052BA9836A00549600 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
+		};
+		DD1431092BA9837C00549600 /* OneSignalExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD1431082BA9837C00549600 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalExtension;
+		};
+		DD14310B2BA9837C00549600 /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD1431082BA9837C00549600 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalFramework;
+		};
+		DD14310D2BA9837C00549600 /* OneSignalInAppMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD1431082BA9837C00549600 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalInAppMessages;
+		};
+		DD14310F2BA9837C00549600 /* OneSignalLocation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD1431082BA9837C00549600 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalLocation;
+		};
+		DD1431562BAA397A00549600 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD1431552BAA397A00549600 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		DD1431592BAA39AE00549600 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD1431582BAA39AE00549600 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F1DF64B62B99CE95002975A9 /* Project object */;
+}
